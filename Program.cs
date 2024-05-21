@@ -15,5 +15,5 @@ string databaseId = "<cosmos-database>";
 Database database = await client.CreateDatabaseIfNotExistsAsync(databaseId);
 Console.WriteLine($"Cosmos Database:\t{database.Id}");
 string containerId = "<cosmos-container>";
-Container container = await database.CreateContainerIfNotExistsAsync(id:containerId,partitionKeyPath:"/<partitionKeyPath>",throughput:400);
+Container container = await database.CreateContainerIfNotExistsAsync(id:containerId,partitionKeyPath:"/<container-partition-key>",throughput:400);
 Console.WriteLine($"Cosmos Container:\t{container.Id}");
