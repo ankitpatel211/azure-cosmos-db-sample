@@ -3,7 +3,7 @@
     using Microsoft.Extensions.Configuration;
 #endregion
 
-#region Application configuration
+#region Application Configuration
     //Build configuration using a Json configuration file
     var builder = new ConfigurationBuilder();
     builder.SetBasePath(Directory.GetCurrentDirectory())
